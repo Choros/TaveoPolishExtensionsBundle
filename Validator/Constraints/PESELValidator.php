@@ -43,7 +43,6 @@ class PESELValidator extends ConstraintValidator
 
                     $now = new \DateTime();
                     $birth_day = new \DateTime($year.'-'.$month.'-'.$day);
-                    var_dump($birth_day);
                     $valid = checkdate($month, $day, $year) && ($now > $birth_day);
                 }
             } else
